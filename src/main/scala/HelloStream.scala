@@ -19,8 +19,6 @@
 
 object HelloSparkStream extends StreamConfig {
 
-  case class WordCount(word: String, count: Int)
-
     def stream() = {
 
       val lines = ssc.socketTextStream("localhost", 7777)
