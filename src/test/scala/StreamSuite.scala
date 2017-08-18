@@ -23,7 +23,7 @@ import org.scalatest.FunSuite
 
 class StreamSuite extends FunSuite with TestUtil {
 
-  test("Stream should print established connections.") {
+  test("Stream and print established connections.") {
 
     stream()
   }
