@@ -23,9 +23,6 @@ object HelloSparkStream extends StreamConfig {
 
       val lines = ssc.socketTextStream("localhost", 7777)
 
-      // Split lines DStream input.
-      val splitLines = lines.flatMap(_.split(" "))
-
       // Filter DStream for established connections.
       val activeConnections = lines.filter(_.contains("ESTABLISHED"))
 
