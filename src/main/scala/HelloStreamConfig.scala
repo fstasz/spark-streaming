@@ -33,6 +33,5 @@ trait StreamConfig {
     val AppName = "HelloStream"
     val BatchInterval = 2;
     val SparkMaster = "local[2]"
-    val SystemLog = "/var/log/system.log"
   }
 }
