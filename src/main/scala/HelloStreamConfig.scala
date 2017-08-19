@@ -27,11 +27,11 @@ trait StreamConfig {
     .setMaster(Configuration.SparkMaster)
 
   /** Create a StreamingContext. */
-  val ssc = new StreamingContext(conf, Seconds(Configuration.BatchInterval))
+  val ssc = new StreamingContext(conf, Seconds(Configuration.Interval))
 
   object Configuration {
     val AppName = "HelloStream"
-    val BatchInterval = 2;
+    val Interval = 2;
     val SparkMaster = "local[2]"
   }
 }
