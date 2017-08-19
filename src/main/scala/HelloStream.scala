@@ -24,7 +24,7 @@ object HelloSparkStream extends StreamConfig {
       /** Stream from issuing command: watch lsof -i | nc -lk 7777 */
       val stream = ssc.socketTextStream("localhost", 7777)
 
-      // Filter DStream for established connections.
+      /** Filter DStream for established connections. */
       val activeConnections = stream.filter(_.contains("ESTABLISHED"))
 
       activeConnections.print()
