@@ -24,8 +24,6 @@ trait TestUtil extends BeforeAndAfterAll { this: Suite =>
 
   override def afterAll() {
 
-    ssc.awaitTermination()
-
     ssc.stop(true, true)
     println("Streaming SparkContext gracefully shut down.")
   }

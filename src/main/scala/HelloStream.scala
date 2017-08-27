@@ -30,5 +30,7 @@ object HelloSparkStream extends StreamConfig {
       activeConnections.print()
 
       ssc.start()
+
+      ssc.awaitTermination()
     }
 }
