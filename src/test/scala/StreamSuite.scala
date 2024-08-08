@@ -18,10 +18,10 @@
   */
 
 import HelloSparkStream._
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
 
-class StreamSuite extends FunSuite with TestUtil {
+class StreamSuite extends AnyFunSuite with TestUtil {
 
   test("Stream and print established connections.") {
 
